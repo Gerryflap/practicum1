@@ -11,7 +11,7 @@ public class Opgave11PreparedStatement implements Opgave {
 
 
     public void run(String[] args) {
-        System.out.println("Prepared Statement: ");
+        //System.out.println("Prepared Statement: ");
 
         int iters = 100;
         long startTime = System.currentTimeMillis();
@@ -56,6 +56,6 @@ public class Opgave11PreparedStatement implements Opgave {
         // afrondende statements buiten de loop (bijv “st.close();”)
         long stopTime = System.currentTimeMillis();
         double elapsedTime = (stopTime - startTime) / (1.0*iters);
-        System.out.println("Gemeten tijd: "+elapsedTime+" ms");
+        System.out.print(elapsedTime+" ms \t");
     }
 }
