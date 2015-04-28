@@ -6,10 +6,10 @@ package gerben;
 public class GerbenMain {
     public static void main(String[] args){
 
-        Opgave currentOpgave = new Opgave5();
+        Opgave currentOpgave = new Opgave7();
 
 
-        currentOpgave.run();
+        currentOpgave.run(args);
 
     }
 }

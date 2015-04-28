@@ -11,7 +11,7 @@ import java.sql.Statement;
  * Created by gerben on 28-4-15.
  */
 public class Opgave5 implements Opgave {
-    public void run() {
+    public void run(String[] args) {
         Connection connection = ConnectDatabase.getInstance().getConnection();
         try {
             Statement statement = connection.createStatement();
