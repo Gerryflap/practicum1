@@ -10,7 +10,7 @@ public class ConnectDatabase {
 
     public static final String USERNAME = "db76";
 
-    public static final String PASSWORD = "DPyfU1fK";
+    public static final String PASSWORD = Password.PASSWORD;
 
     public static final String DATABASE = "db76";
 
