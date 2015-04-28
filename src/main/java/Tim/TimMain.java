@@ -16,7 +16,7 @@ public class TimMain {
 
     public static void main(String[] args) {
         try {
-            Opgave6.main(str);
+            Opgave8.main(str);
 
 
 
