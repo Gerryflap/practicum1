@@ -19,15 +19,15 @@ public class Opgave12 {
     }
 
     public static List<Integer> alleFilms() {
-
+        return null;
     }
 
     public static List<String> autheurVanFilm(int mid) {
-
+        return null;
     }
 
     public static boolean heeftRegisseur(int mid) {
-
+        return false;
     }
 
 }
