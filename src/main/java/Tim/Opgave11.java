@@ -27,32 +27,32 @@ public class Opgave11 implements Opgave {
             // statements die je 100x wilt doen
 
             //Normal Statement
-            statementSet = statement.executeQuery(getStatement());
+            //statementSet = statement.executeQuery(getStatement());
             //Prepared Statement
-            prepStatementSet = prepStatement.executeQuery();
+            //prepStatementSet = prepStatement.executeQuery();
             //Procedure
             procedureSet = procedure.executeQuery(getProcedure());
         }
         // afrondende statements buiten de loop (bijv “st.close();”)
 
-        System.out.println("Statement: \n");
-        while (statementSet.next()) {
+        System.out.println("Statement: ");
+        while (statementSet != null && statementSet.next()) {
             System.out.println(statementSet.getString(1));
         }
 
-        System.out.println("Prepared Statement: \n");
-        while (prepStatementSet.next()) {
+        System.out.println("\nPrepared Statement: ");
+        while (prepStatementSet != null && prepStatementSet.next()) {
             System.out.println(prepStatementSet.getString(1));
         }
 
-        System.out.println("Procedure: \n");
-        while (procedureSet.next()) {
+        System.out.println("\nProcedure: ");
+        while (procedureSet != null && procedureSet.next()) {
             System.out.println(procedureSet.getString(1));
         }
 
         long stopTime = System.currentTimeMillis();
         double elapsedTime = (stopTime - startTime) / (1.0*iters);
-        System.out.println("Gemeten tijd: "+elapsedTime+" ms");
+        System.out.println("\nGemeten tijd: "+elapsedTime+" ms");
     }
 
     public static String getStatement() throws SQLException {
